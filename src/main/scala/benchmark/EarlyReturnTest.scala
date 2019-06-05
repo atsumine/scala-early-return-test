@@ -5,7 +5,7 @@ import scala.util.control.Breaks
 import org.openjdk.jmh.annotations.{Benchmark, Scope, State}
 
 @State(Scope.Thread)
-class EaarlyReturnTest {
+class EarlyReturnTest {
   val numSeq = Seq(1,2,3,4,5)
 
   val b = new Breaks
