@@ -1,97 +1,114 @@
-[IJ]sbt:scala-early-return-test> jmh:run -i 3 -wi 20 -f1 -t1
-Processing 7 classes from /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/classes with "reflection" generator
+[IJ]sbt:BasicProjectWithScalaTest> jmh:run -i 10 -wi 20 -f1 -t1
+[info] Packaging /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/basicprojectwithscalatest_2.12-0.1.jar ...
+Processing 1 classes from /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/classes with "reflection" generator
 Writing out Java source to /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/src_managed/jmh and resources to /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/resource_managed/jmh
-[info] Packaging /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/scala-early-return-test_2.12-0.1.0-SNAPSHOT-tests.jar ...
 [info] Done packaging.
-[info] Packaging /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/scala-early-return-test_2.12-0.1.0-SNAPSHOT-jmh.jar ...
+[info] Packaging /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/basicprojectwithscalatest_2.12-0.1-tests.jar ...
 [info] Done packaging.
-[info] Running (fork) org.openjdk.jmh.Main -i 3 -wi 20 -f1 -t1
+[info] Compiling 6 Java sources to /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Packaging /Users/kondouyutakabon/Development/scala/scala-early-return-test/target/scala-2.12/basicprojectwithscalatest_2.12-0.1-jmh.jar ...
+[info] Done packaging.
+[info] Running (fork) org.openjdk.jmh.Main -i 10 -wi 20 -f1 -t1
 [info] # JMH version: 1.21
 [info] # VM version: JDK 1.8.0_144, Java HotSpot(TM) 64-Bit Server VM, 25.144-b01
 [info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/bin/java
 [info] # VM options: <none>
 [info] # Warmup: 20 iterations, 10 s each
-[info] # Measurement: 3 iterations, 10 s each
+[info] # Measurement: 10 iterations, 10 s each
 [info] # Timeout: 10 min per iteration
 [info] # Threads: 1 thread, will synchronize iterations
 [info] # Benchmark mode: Throughput, ops/time
 [info] # Benchmark: benchmark.EaarlyReturnTest.existsWithBreak
-[info] # Run progress: 0.00% complete, ETA 00:07:40
+[info] # Run progress: 0.00% complete, ETA 00:10:00
 [info] # Fork: 1 of 1
-[info] # Warmup Iteration   1: 80684271.813 ops/s
-[info] # Warmup Iteration   2: 83802238.674 ops/s
-[info] # Warmup Iteration   3: 81238480.404 ops/s
-[info] # Warmup Iteration   4: 81599723.157 ops/s
-[info] # Warmup Iteration   5: 82583625.193 ops/s
-[info] # Warmup Iteration   6: 82205697.511 ops/s
-[info] # Warmup Iteration   7: 82380296.693 ops/s
-[info] # Warmup Iteration   8: 86863186.506 ops/s
-[info] # Warmup Iteration   9: 86725069.882 ops/s
-[info] # Warmup Iteration  10: 86757606.967 ops/s
-[info] # Warmup Iteration  11: 86527311.676 ops/s
-[info] # Warmup Iteration  12: 86203485.297 ops/s
-[info] # Warmup Iteration  13: 85979481.868 ops/s
-[info] # Warmup Iteration  14: 84557530.482 ops/s
-[info] # Warmup Iteration  15: 85578514.904 ops/s
-[info] # Warmup Iteration  16: 82966433.996 ops/s
-[info] # Warmup Iteration  17: 86703936.484 ops/s
-[info] # Warmup Iteration  18: 86747997.248 ops/s
-[info] # Warmup Iteration  19: 86409733.766 ops/s
-[info] # Warmup Iteration  20: 86937319.551 ops/s
-[info] Iteration   1: 86778692.534 ops/s
-[info] Iteration   2: 86456941.343 ops/s
-[info] Iteration   3: 86738716.296 ops/s
+[info] # Warmup Iteration   1: 75640983.717 ops/s
+[info] # Warmup Iteration   2: 86399338.894 ops/s
+[info] # Warmup Iteration   3: 84737758.299 ops/s
+[info] # Warmup Iteration   4: 85403769.478 ops/s
+[info] # Warmup Iteration   5: 85421233.053 ops/s
+[info] # Warmup Iteration   6: 84723815.629 ops/s
+[info] # Warmup Iteration   7: 85324114.348 ops/s
+[info] # Warmup Iteration   8: 85293032.625 ops/s
+[info] # Warmup Iteration   9: 85208196.462 ops/s
+[info] # Warmup Iteration  10: 84579283.313 ops/s
+[info] # Warmup Iteration  11: 85462516.188 ops/s
+[info] # Warmup Iteration  12: 85083536.049 ops/s
+[info] # Warmup Iteration  13: 85115371.858 ops/s
+[info] # Warmup Iteration  14: 85295472.986 ops/s
+[info] # Warmup Iteration  15: 85166670.885 ops/s
+[info] # Warmup Iteration  16: 85315000.509 ops/s
+[info] # Warmup Iteration  17: 84871196.253 ops/s
+[info] # Warmup Iteration  18: 84915182.474 ops/s
+[info] # Warmup Iteration  19: 85025777.429 ops/s
+[info] # Warmup Iteration  20: 84763533.022 ops/s
+[info] Iteration   1: 85158242.574 ops/s
+[info] Iteration   2: 85145311.896 ops/s
+[info] Iteration   3: 85372196.485 ops/s
+[info] Iteration   4: 84817660.886 ops/s
+[info] Iteration   5: 84940238.819 ops/s
+[info] Iteration   6: 85236893.217 ops/s
+[info] Iteration   7: 85067376.338 ops/s
+[info] Iteration   8: 85201685.600 ops/s
+[info] Iteration   9: 85348327.241 ops/s
+[info] Iteration  10: 82585567.658 ops/s
 [info] Result "benchmark.EaarlyReturnTest.existsWithBreak":
-[info]   86658116.724 ±(99.9%) 3199325.625 ops/s [Average]
-[info]   (min, avg, max) = (86456941.343, 86658116.724, 86778692.534), stdev = 175365.833
-[info]   CI (99.9%): [83458791.100, 89857442.349] (assumes normal distribution)
+[info]   84887350.071 ±(99.9%) 1249431.724 ops/s [Average]
+[info]   (min, avg, max) = (82585567.658, 84887350.071, 85372196.485), stdev = 826421.726
+[info]   CI (99.9%): [83637918.347, 86136781.796] (assumes normal distribution)
 [info] # JMH version: 1.21
 [info] # VM version: JDK 1.8.0_144, Java HotSpot(TM) 64-Bit Server VM, 25.144-b01
 [info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/bin/java
 [info] # VM options: <none>
 [info] # Warmup: 20 iterations, 10 s each
-[info] # Measurement: 3 iterations, 10 s each
+[info] # Measurement: 10 iterations, 10 s each
 [info] # Timeout: 10 min per iteration
 [info] # Threads: 1 thread, will synchronize iterations
 [info] # Benchmark mode: Throughput, ops/time
 [info] # Benchmark: benchmark.EaarlyReturnTest.existsWithReturn
-[info] # Run progress: 50.00% complete, ETA 00:03:51
+[info] # Run progress: 50.00% complete, ETA 00:05:01
 [info] # Fork: 1 of 1
-[info] # Warmup Iteration   1: 39425857.134 ops/s
-[info] # Warmup Iteration   2: 42318884.938 ops/s
-[info] # Warmup Iteration   3: 46543949.755 ops/s
-[info] # Warmup Iteration   4: 44615613.696 ops/s
-[info] # Warmup Iteration   5: 44373629.988 ops/s
-[info] # Warmup Iteration   6: 46616190.309 ops/s
-[info] # Warmup Iteration   7: 46502597.340 ops/s
-[info] # Warmup Iteration   8: 46485008.654 ops/s
-[info] # Warmup Iteration   9: 46678507.289 ops/s
-[info] # Warmup Iteration  10: 45980749.352 ops/s
-[info] # Warmup Iteration  11: 46524134.753 ops/s
-[info] # Warmup Iteration  12: 46508514.360 ops/s
-[info] # Warmup Iteration  13: 46590146.438 ops/s
-[info] # Warmup Iteration  14: 46875595.019 ops/s
-[info] # Warmup Iteration  15: 46483383.821 ops/s
-[info] # Warmup Iteration  16: 46577271.712 ops/s
-[info] # Warmup Iteration  17: 46841182.573 ops/s
-[info] # Warmup Iteration  18: 46436094.543 ops/s
-[info] # Warmup Iteration  19: 45861315.608 ops/s
-[info] # Warmup Iteration  20: 46730038.088 ops/s
-[info] Iteration   1: 46744414.747 ops/s
-[info] Iteration   2: 46503375.333 ops/s
-[info] Iteration   3: 46769278.569 ops/s
+[info] # Warmup Iteration   1: 34352857.213 ops/s
+[info] # Warmup Iteration   2: 40061561.969 ops/s
+[info] # Warmup Iteration   3: 32650289.090 ops/s
+[info] # Warmup Iteration   4: 40623988.735 ops/s
+[info] # Warmup Iteration   5: 37527064.179 ops/s
+[info] # Warmup Iteration   6: 45642489.932 ops/s
+[info] # Warmup Iteration   7: 44640636.396 ops/s
+[info] # Warmup Iteration   8: 42972921.577 ops/s
+[info] # Warmup Iteration   9: 44193908.001 ops/s
+[info] # Warmup Iteration  10: 44715284.668 ops/s
+[info] # Warmup Iteration  11: 44376325.059 ops/s
+[info] # Warmup Iteration  12: 45544952.088 ops/s
+[info] # Warmup Iteration  13: 45265338.647 ops/s
+[info] # Warmup Iteration  14: 44180794.856 ops/s
+[info] # Warmup Iteration  15: 40147781.852 ops/s
+[info] # Warmup Iteration  16: 44762910.669 ops/s
+[info] # Warmup Iteration  17: 44912574.379 ops/s
+[info] # Warmup Iteration  18: 45760897.320 ops/s
+[info] # Warmup Iteration  19: 45856302.384 ops/s
+[info] # Warmup Iteration  20: 43836579.290 ops/s
+[info] Iteration   1: 45100206.617 ops/s
+[info] Iteration   2: 45461110.152 ops/s
+[info] Iteration   3: 46669353.668 ops/s
+[info] Iteration   4: 44812573.614 ops/s
+[info] Iteration   5: 42529683.690 ops/s
+[info] Iteration   6: 42446405.503 ops/s
+[info] Iteration   7: 46372307.277 ops/s
+[info] Iteration   8: 46731837.764 ops/s
+[info] Iteration   9: 46185660.224 ops/s
+[info] Iteration  10: 41469755.361 ops/s
 [info] Result "benchmark.EaarlyReturnTest.existsWithReturn":
-[info]   46672356.217 ±(99.9%) 2679434.410 ops/s [Average]
-[info]   (min, avg, max) = (46503375.333, 46672356.217, 46769278.569), stdev = 146868.841
-[info]   CI (99.9%): [43992921.806, 49351790.627] (assumes normal distribution)
-[info] # Run complete. Total time: 00:07:42
+[info]   44777889.387 ±(99.9%) 2935297.651 ops/s [Average]
+[info]   (min, avg, max) = (41469755.361, 44777889.387, 46731837.764), stdev = 1941517.654
+[info]   CI (99.9%): [41842591.736, 47713187.039] (assumes normal distribution)
+[info] # Run complete. Total time: 00:10:02
 [info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
 [info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
 [info] experiments, perform baseline and negative tests that provide experimental control, make sure
 [info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
 [info] Do not assume the numbers tell you what you want them to tell.
 [info] Benchmark                           Mode  Cnt         Score         Error  Units
-[info] EaarlyReturnTest.existsWithBreak   thrpt    3  86658116.724 ± 3199325.625  ops/s
-[info] EaarlyReturnTest.existsWithReturn  thrpt    3  46672356.217 ± 2679434.410  ops/s
-[success] Total time: 464 s, completed 2019/06/05 0:33:41
-[IJ]sbt:scala-early-return-test> 
+[info] EaarlyReturnTest.existsWithBreak   thrpt   10  84887350.071 ± 1249431.724  ops/s
+[info] EaarlyReturnTest.existsWithReturn  thrpt   10  44777889.387 ± 2935297.651  ops/s
+[success] Total time: 606 s, completed 2019/06/06 0:04:50
